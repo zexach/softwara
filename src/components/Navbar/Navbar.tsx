@@ -7,7 +7,7 @@ const Navbar: React.FC = () => {
         <>
         <div className="navbar">
             <div className="navbar__title-section">
-                <p className="navbar__title-section__title">softwara</p>
+                <h1 className="navbar__title-section__title">softwara</h1>
             </div>
             <div className="navbar__pages">
                 <p className="navbar__pages__page">About us</p>

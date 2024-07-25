@@ -1,0 +1,21 @@
+@import '../../style/_variables';
+
+.welcome-page{
+    width: 100%;
+    height: 100vh;
+    display: grid;
+    &__content-section{
+        padding: 5rem;
+        align-self: center;
+        display: flex;
+        flex-direction: column;
+        line-height: 1;
+        &__about{
+            font-size: 70px;
+        }
+        &__skills{
+            font-size: 100px;
+            color: $purple;
+        }
+    }
+}
