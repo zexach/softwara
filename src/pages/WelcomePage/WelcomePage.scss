@@ -2,7 +2,7 @@
 
 .welcome-page{
     width: 100%;
-    height: calc(100vh - 142px);
+    height: 100vh;
     display: grid;
     background-color: $background;
     &__content-section{
@@ -21,6 +21,7 @@
         }
     }
     &__waves{
+        display: flex;
         align-self: flex-end;
     }
 }

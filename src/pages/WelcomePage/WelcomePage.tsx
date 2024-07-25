@@ -19,22 +19,16 @@ const WelcomePage: React.FC = () => {
                     cursor={false}
                     />
                 <TypeAnimation
-                    sequence={[
-                        'Brave Thinkers.',
-                        1500,
-                        'Innovative Minds.',
-                        1500,
-                        'Creative Spirits.',
-                        1500,
-                        'Developers.',
-                        1500,
-                    ]}
+                    sequence={['Brave Thinkers.', 1500,
+                        'Innovative Minds.', 1500,
+                        'Creative Spirits.', 1500,
+                        'Developers.', 1500]}
                     speed={50}
                     style={{ fontSize: '100px', fontWeight: '700', color: '#801270' }}
                     repeat={Infinity}
                     />
                 <p className="welcome-page__content-section__about">
-                Delivering strategic IT solutions with a focus on customer satisfaction, measurable results, and competitive pricing for startups, small to medium-sized businesses.
+                    Delivering strategic IT solutions with a focus on customer satisfaction, measurable results, and competitive pricing for startups, small to medium-sized businesses.
                 </p>
             </div>
             <div className="welcome-page__waves">
