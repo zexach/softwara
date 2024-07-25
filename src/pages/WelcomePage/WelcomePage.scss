@@ -2,8 +2,9 @@
 
 .welcome-page{
     width: 100%;
-    height: 100vh;
+    height: calc(100vh - 142px);
     display: grid;
+    background-color: $background;
     &__content-section{
         padding: 5rem;
         align-self: center;
@@ -11,11 +12,15 @@
         flex-direction: column;
         line-height: 1;
         &__about{
-            font-size: 70px;
+            align-self: center;
+            margin: 5rem 0 0 0;
+            font-size: 25px;
+            font-weight: 400;
+            color: $black;
+            text-align: center;
         }
-        &__skills{
-            font-size: 100px;
-            color: $purple;
-        }
+    }
+    &__waves{
+        align-self: flex-end;
     }
 }
