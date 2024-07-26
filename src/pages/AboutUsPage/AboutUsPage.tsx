@@ -5,7 +5,7 @@ const AboutUsPage: React.FC = () => {
 
     return(
         <>
-        <div className="about-us-page">
+        <div id='about' className="about-us-page">
             About Us
         </div>
         </>

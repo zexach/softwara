@@ -1,0 +1,15 @@
+@import '../../style/_variables';
+
+.link-button{
+    width: fit-content;
+    align-self: center;
+    padding: 1rem;
+    border: 1px solid $purple;
+    background-color: transparent;
+    color: $purple;
+    transition: 0.3s;
+    &:hover{
+        background-color: $purple;
+        color: $background;
+    }
+}

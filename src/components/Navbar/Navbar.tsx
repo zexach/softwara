@@ -10,9 +10,9 @@ const Navbar: React.FC = () => {
                 <h1 className="navbar__title-section__title">softwara</h1>
             </div>
             <div className="navbar__pages">
-                <p className="navbar__pages__page">About us</p>
-                <p className="navbar__pages__page">Projects</p>
-                <p className="navbar__pages__page">Contact</p>
+                <a href="#about" className="navbar__pages__page">About us</a>
+                <a className="navbar__pages__page">Projects</a>
+                <a className="navbar__pages__page">Contact</a>
             </div>
         </div>
         </>
