@@ -25,13 +25,13 @@ const ProfileImage: React.FC<Props> = ({ image, name, linkedin, github, facebook
             { isHovered ? 
                 <div onMouseLeave={() => setIsHovered(!isHovered)} className="profile-image__overlay">
                     <div className="profile-image__overlay__socials">
-                        <a target="_blank" href={linkedin} className="profile-image__overlay__socials__social">
+                        <a target="_blank" rel="noreferrer" href={linkedin} className="profile-image__overlay__socials__social">
                             <img src={linkedinIcon} alt="linkedin" />
                         </a>
-                        <a target="_blank" href={github} className="profile-image__overlay__socials__social">
+                        <a target="_blank" rel="noreferrer" href={github} className="profile-image__overlay__socials__social">
                             <img src={githubIcon} alt="github" />
                         </a>
-                        <a target="_blank" href={facebook} className="profile-image__overlay__socials__social">
+                        <a target="_blank" rel="noreferrer" href={facebook} className="profile-image__overlay__socials__social">
                             <img src={facebookIcon} alt="facebook" />
                         </a>
                     </div>
