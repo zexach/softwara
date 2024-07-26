@@ -1,0 +1,26 @@
+[
+    {
+        "id": 1,
+        "name": "Projects Done",
+        "number": 5,
+        "cca": false
+    },
+    {
+        "id": 2,
+        "name": "Years of Experience",
+        "number": 3,
+        "cca": true
+    },
+    {
+        "id": 3,
+        "name": "Team Members",
+        "number": 2,
+        "cca": false
+    },
+    {
+        "id": 4,
+        "name": "Lines of Code",
+        "number": 50000,
+        "cca": true
+    }
+]
