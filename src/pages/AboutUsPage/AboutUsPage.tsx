@@ -3,8 +3,6 @@ import './AboutUsPage.scss'
 import KeyMetric from "../../components/KeyMetrics/KeyMetric";
 import ProfileImage from "../../components/ProfileImage/ProfileImage";
 import { motion } from "framer-motion";
-import muki from '../../assets/DSCF1167.jpg';
-import emir from '../../assets/in_profile.jpg';
 import useMetrics from '../../assets/metrics/metrics.json';
 import useTeam from '../../assets/team/team.json'
 
@@ -18,7 +16,11 @@ const AboutUsPage: React.FC = () => {
         <div
             id='about'
             className="about-us-page">
-            <motion.h1 className="about-us-page__header">About us</motion.h1>
+            <motion.h1
+                initial={{ opacity: 0 }}
+                whileInView={{ opacity: 1, transition:{ duration: 1 } }}
+                viewport={{ once: true }}
+                className="about-us-page__header">About us</motion.h1>
             <motion.div
                 initial={{ opacity: 0 }}
                 whileInView={{ opacity: 1, transition:{ duration: 1 } }}
