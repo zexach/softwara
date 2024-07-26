@@ -1,7 +1,39 @@
 @import '../../style/_variables.scss';
 
 .about-us-page{
-    width: 100%;
+    max-width: 100%;
     min-height: 100vh;
+    padding: 1rem 5rem;
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
     background-color: $purple;
+    color: $background;
+    &__header{
+        font-size: 70px;
+        font-weight: 600;
+    }
+    &__content{
+        display: flex;
+        flex-direction: column;
+        gap: 2rem;
+        &__desc{
+            font-size: 16px;
+        }
+        &__metrics{
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            gap: 2rem;
+            &__metrics{
+                display: flex;
+                flex-direction: row;
+                gap: 10rem;
+            }
+            &__header{
+                font-size: 40px;
+                font-weight: 600;
+            }
+        }
+    }
 }

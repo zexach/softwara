@@ -1,0 +1,14 @@
+@import '../../style/_variables.scss';
+
+.key-metric{
+    width: 160px;
+    &__text{
+        font-size: 18px;
+    }
+    &__number{
+        display: flex;
+        flex-direction: row;
+        font-size: 42px;
+        font-weight: 600;
+    }
+}
