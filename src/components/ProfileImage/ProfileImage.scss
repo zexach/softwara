@@ -23,8 +23,7 @@
         display: flex;
         justify-content: center;
         align-items: center;
-        background-color: $background;
-        opacity: 0.6;
+        background-color: $background-transparent;
         animation: fadeInUp 0.3s;
         &__socials{
             display: flex;
@@ -57,6 +56,6 @@
       opacity: 0;
     }
     to {
-      opacity: 0.6;
+      opacity: 1;
     }
 }

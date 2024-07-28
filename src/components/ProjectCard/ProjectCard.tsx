@@ -1,15 +1,28 @@
-import React from "react";
+import React, { useState } from "react";
 import './ProjectCard.scss'
 
-const ProjectCard: React.FC = () => {
+type Props = {
+    children?: React.ReactNode;
+    image: string;
+    name: string;
+    description: string;
+}
+
+const ProjectCard: React.FC<Props> = ({ image, name, description }) => {
+
+    const [isHovered, setIsHovered] = useState<boolean>(false);
 
     return(
         <>
         <div className="project-card">
-            <img src="https://i.imgur.com/GgBmrZl.png" alt="project-img" className="project-card__background" />
-            <div className="project-card__info">
-                <h1 className="project-card__info__title">Star Tunes</h1>
-            </div>
+            <img onMouseEnter={() => setIsHovered(true)} src={image} alt="project-img" className="project-card__background" />
+            { isHovered ? 
+                <div onMouseLeave={() => setIsHovered(!isHovered)} className="project-card__info">
+                    <div className="project-card__info__content">
+                        <h1 className="project-card__info__content__title">{ name }</h1>
+                        <p className="project-card__info__content__description">{ description }</p>
+                    </div>
+                </div> : '' }
         </div>
         </>
     );
