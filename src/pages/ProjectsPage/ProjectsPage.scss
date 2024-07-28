@@ -8,7 +8,10 @@
     gap: 2rem;
     background-color: $background;
     &__content{
-        padding: 0rem 5rem;
+        display: flex;
+        flex-direction: column;
+        gap: 2rem;
+        padding: 1rem 5rem;
         &__header{
             font-size: 70px;
             font-weight: 600;

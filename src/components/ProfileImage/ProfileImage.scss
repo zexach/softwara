@@ -30,6 +30,12 @@
             display: flex;
             flex-direction: row;
             gap: 2rem;
+            &__social{
+                transition: 0.3s;
+                &:hover{
+                    scale: 1.2;
+                }
+            }
         }
     }
     &__info{

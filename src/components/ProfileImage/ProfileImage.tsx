@@ -31,9 +31,6 @@ const ProfileImage: React.FC<Props> = ({ image, name, linkedin, github, facebook
                         <a target="_blank" rel="noreferrer" href={github} className="profile-image__overlay__socials__social">
                             <img src={githubIcon} alt="github" />
                         </a>
-                        <a target="_blank" rel="noreferrer" href={facebook} className="profile-image__overlay__socials__social">
-                            <img src={facebookIcon} alt="facebook" />
-                        </a>
                     </div>
                 </div> : '' } 
                 <div className="profile-image__info">
