@@ -1,7 +1,6 @@
 import React, { useState } from "react";
 import './ProfileImage.scss';
 import linkedinIcon from '../../assets/icons/linkedin.svg';
-import facebookIcon from '../../assets/icons/facebook.svg';
 import githubIcon from '../../assets/icons/github.svg';
 
 type Props = {
