@@ -1,9 +1,8 @@
 import React from 'react';
 import './style/App.scss';
 import Navbar from './components/Navbar/Navbar';
-import WelcomePage from './pages/WelcomePage/WelcomePage';
-import AboutUsPage from './pages/AboutUsPage/AboutUsPage';
-import ProjectsPage from './pages/ProjectsPage/ProjectsPage';
+import PortfolioPage from './views/PortfolioPage';
+import { Routes, Route } from 'react-router-dom';
 
 const App: React.FC = () => {
 
@@ -11,9 +10,9 @@ const App: React.FC = () => {
     return (
         <div className="app">
             <Navbar />
-            <WelcomePage />
-            <AboutUsPage />
-            <ProjectsPage />
+            <Routes>
+                <Route path='/' element={<PortfolioPage />} />
+            </Routes>
         </div>
     );
 }

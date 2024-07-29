@@ -22,7 +22,7 @@ const ProfileImage: React.FC<Props> = ({ image, name, linkedin, github, facebook
         <div className="profile-image">
             <img onMouseEnter={() => setIsHovered(true)} src={image} alt="profile-pic" className="profile-image__img" />
             { isHovered ? 
-                <div onMouseLeave={() => setIsHovered(!isHovered)} className="profile-image__overlay">
+                <div onMouseLeave={() => setIsHovered(false)} className="profile-image__overlay">
                     <div className="profile-image__overlay__socials">
                         <a target="_blank" rel="noreferrer" href={linkedin} className="profile-image__overlay__socials__social">
                             <img src={linkedinIcon} alt="linkedin" />
@@ -31,7 +31,7 @@ const ProfileImage: React.FC<Props> = ({ image, name, linkedin, github, facebook
                             <img src={githubIcon} alt="github" />
                         </a>
                     </div>
-                </div> : '' } 
+                </div> : null } 
                 <div className="profile-image__info">
                     <p className="profile-image__info__name">{ name }</p>
                     <p className="profile-image__info__role">{ role }</p>

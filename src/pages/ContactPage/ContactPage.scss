@@ -1,0 +1,12 @@
+@import '../../style/_variables.scss';
+
+.contact-page {
+    max-width: 100%;
+    min-height: 100vh;
+    padding: 1rem 5rem;
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+    background-color: $purple;
+    color: $background;
+}

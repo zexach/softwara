@@ -12,7 +12,7 @@ const Navbar: React.FC = () => {
             <div className="navbar__pages">
                 <a href="#about" className="navbar__pages__page">About us</a>
                 <a href="#projects" className="navbar__pages__page">Projects</a>
-                <a href="#about" className="navbar__pages__page">Contact</a>
+                <a href="#contact" className="navbar__pages__page">Contact</a>
             </div>
         </div>
         </>
