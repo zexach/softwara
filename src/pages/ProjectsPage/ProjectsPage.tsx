@@ -5,6 +5,7 @@ import { motion } from "framer-motion";
 import ProjectCard from "../../components/ProjectCard/ProjectCard";
 import Waves1 from "../../components/Waves/Waves1";
 import useProjects from '../../assets/projects/projects.json';
+import PageHeader from "../../components/PageHeader/PageHeader";
 
 const ProjectsPage: React.FC = () => {
 
@@ -15,11 +16,7 @@ const ProjectsPage: React.FC = () => {
         <div className="projects-page">
             <WavesUpside />
             <div id="projects" className="projects-page__content">
-                <motion.h1
-                    initial={{ opacity: 0 }}
-                    whileInView={{ opacity: 1, transition:{ duration: 1 } }}
-                    viewport={{ once: true }}
-                    className="projects-page__content__header">Projects</motion.h1>
+                <PageHeader title="Projects" />
                 <motion.div
                     initial={{ opacity: 0 }}
                     whileInView={{ opacity: 1, transition:{ duration: 1 } }}

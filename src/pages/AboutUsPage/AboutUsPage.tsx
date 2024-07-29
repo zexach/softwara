@@ -5,6 +5,7 @@ import ProfileImage from "../../components/ProfileImage/ProfileImage";
 import { motion } from "framer-motion";
 import useMetrics from '../../assets/metrics/metrics.json';
 import useTeam from '../../assets/team/team.json'
+import PageHeader from "../../components/PageHeader/PageHeader";
 
 const AboutUsPage: React.FC = () => {
 
@@ -16,11 +17,7 @@ const AboutUsPage: React.FC = () => {
         <div
             id='about'
             className="about-us-page">
-            <motion.h1
-                initial={{ opacity: 0 }}
-                whileInView={{ opacity: 1, transition:{ duration: 1 } }}
-                viewport={{ once: true }}
-                className="about-us-page__header">About us</motion.h1>
+            <PageHeader title="About Us" />
             <motion.div
                 initial={{ opacity: 0 }}
                 whileInView={{ opacity: 1, transition:{ duration: 1 } }}
