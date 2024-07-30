@@ -3,11 +3,12 @@ import './TextArea.scss';
 
 type Props = {
     children?: React.ReactNode;
+    labelText: string
     placeholder: string;
     isRequired: boolean;
 }
 
-const TextArea: React.FC<Props> = ({ placeholder, isRequired }) => {
+const TextArea: React.FC<Props> = ({ labelText, placeholder, isRequired }) => {
 
     const [isEmpty, setIsEmpty] = useState<boolean>(false);
     const [inputText, setInputText] = useState<string>('');
@@ -19,7 +20,7 @@ const TextArea: React.FC<Props> = ({ placeholder, isRequired }) => {
     return(
         <>
         <div className="text-area">
-            <label className="text-area__label">Your message</label>
+            <label className="text-area__label">{ labelText }</label>
             <textarea
                 onChange={(e: React.ChangeEvent<HTMLTextAreaElement>) => setInputText(e.target.value)}
                 onBlur={() => { inputText !== '' ? setIsEmpty(false) : setIsEmpty(true) }}

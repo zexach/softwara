@@ -1,5 +1,30 @@
 @import '../../style/_variables.scss';
 
 .contact-form {
-    display: flex;
+    &__form{
+        display: flex;
+        flex-direction: column;
+        gap: 1rem;
+        &__inputs{
+            display: grid;
+            grid-template-columns: 1fr 1fr 0.5fr;
+            align-items: flex-end;
+            gap: 1rem;
+            &__btn{
+                height: fit-content;
+                padding: 1rem;
+                border: 1px solid $white;
+                background-color: transparent;
+                font-size: 18px;
+                font-family: $open-sans;
+                color: $white;
+                cursor: pointer;
+                transition: 0.3s;
+                &:hover{
+                    background-color: $white;
+                    color: $purple;
+                }
+            }
+        }
+    }
 }
