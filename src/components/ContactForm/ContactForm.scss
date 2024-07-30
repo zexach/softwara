@@ -7,22 +7,22 @@
         gap: 1rem;
         &__inputs{
             display: grid;
-            grid-template-columns: 1fr 1fr 0.5fr;
-            align-items: flex-end;
+            grid-template-columns: 1fr 1fr;
             gap: 1rem;
+            align-items: flex-start;
             &__btn{
-                height: fit-content;
+                margin-top: 1rem;
                 padding: 1rem;
                 border: 1px solid $white;
-                background-color: transparent;
+                background-color: $white;
                 font-size: 18px;
                 font-family: $open-sans;
-                color: $white;
+                color: $purple;
                 cursor: pointer;
                 transition: 0.3s;
                 &:hover{
-                    background-color: $white;
-                    color: $purple;
+                    background-color: $purple;
+                    color: $white;
                 }
             }
         }

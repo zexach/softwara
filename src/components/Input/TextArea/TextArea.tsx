@@ -1,29 +1,30 @@
-import React, { useState, useEffect } from "react";
+import React, { useState, useEffect, ChangeEvent } from "react";
 import './TextArea.scss';
 
 type Props = {
     children?: React.ReactNode;
+    setValue: React.Dispatch<React.SetStateAction<string>>;
     labelText: string
     placeholder: string;
     isRequired: boolean;
 }
 
-const TextArea: React.FC<Props> = ({ labelText, placeholder, isRequired }) => {
+const TextArea: React.FC<Props> = ({ setValue, labelText, placeholder, isRequired }) => {
 
     const [isEmpty, setIsEmpty] = useState<boolean>(false);
-    const [inputText, setInputText] = useState<string>('');
 
-    useEffect(() => {
-        console.log(isEmpty);
-    }, [isEmpty])
+    const handleChangeEvent = (e: React.ChangeEvent<HTMLTextAreaElement>): void => {
+        setValue(e.target.value);
+        if (e.target.value === '') setIsEmpty(true);
+        else setIsEmpty(false);
+    }
 
     return(
         <>
         <div className="text-area">
             <label className="text-area__label">{ labelText }</label>
             <textarea
-                onChange={(e: React.ChangeEvent<HTMLTextAreaElement>) => setInputText(e.target.value)}
-                onBlur={() => { inputText !== '' ? setIsEmpty(false) : setIsEmpty(true) }}
+                onChange={handleChangeEvent}
                 rows={10}
                 cols={100}
                 name="message"
