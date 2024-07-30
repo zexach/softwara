@@ -18,7 +18,6 @@ const ContactForm: React.FC = () => {
             console.log(name);
             console.log(message);
         }
-
     }
 
     return(

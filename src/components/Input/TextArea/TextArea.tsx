@@ -1,4 +1,4 @@
-import React, { useState, useEffect, ChangeEvent } from "react";
+import React, { useState } from "react";
 import './TextArea.scss';
 
 type Props = {
