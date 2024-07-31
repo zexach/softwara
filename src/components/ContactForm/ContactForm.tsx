@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from "react";
+import React, { useState } from "react";
 import './ContactForm.scss';
 import TextArea from "../Input/TextArea/TextArea";
 import InputField from "../Input/InputField/InputField";

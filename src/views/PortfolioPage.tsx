@@ -4,6 +4,7 @@ import WelcomePage from "../pages/WelcomePage/WelcomePage";
 import AboutUsPage from "../pages/AboutUsPage/AboutUsPage";
 import ProjectsPage from "../pages/ProjectsPage/ProjectsPage";
 import ContactPage from "../pages/ContactPage/ContactPage";
+import Footer from "../components/Footer/Footer";
 
 const PortfolioPage: React.FC = () => {
 
@@ -14,6 +15,7 @@ const PortfolioPage: React.FC = () => {
                 <AboutUsPage />
                 <ProjectsPage />
                 <ContactPage />
+                <Footer />
             </div>
         </>
     );
