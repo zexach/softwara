@@ -1,8 +1,9 @@
 import React from "react";
 import './ContactPage.scss';
 import PageHeader from "../../components/PageHeader/PageHeader";
-import { motion } from "framer-motion";
 import ContactForm from "../../components/ContactForm/ContactForm";
+import { motion } from "framer-motion";
+import { sendEmail } from "../../services/contactService";
 
 const ContactPage: React.FC = () => {
 
@@ -19,7 +20,7 @@ const ContactPage: React.FC = () => {
                         <h3 className="contact-page__content__info__header">Get in Touch</h3>
                         <p className="contact-page__content__info__desc">Whether you're interested in working together or just want to say hello, send us a message below.</p>
                     </div>
-                    <ContactForm />
+                    <ContactForm onSubmitMail={sendEmail} />
                 </motion.div>
             </div>
         </>

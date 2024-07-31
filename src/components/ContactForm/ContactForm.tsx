@@ -1,23 +1,34 @@
-import React, { useState } from "react";
+import React, { useState, useEffect } from "react";
 import './ContactForm.scss';
 import TextArea from "../Input/TextArea/TextArea";
 import InputField from "../Input/InputField/InputField";
 import { emailValidator } from "../../validators/emailValidator";
+import Spinner from "../Spinner/Spinner";
 
-const ContactForm: React.FC = () => {
+type Props = {
+    children?: React. ReactNode;
+    onSubmitMail: (
+        e: React.FormEvent,
+        mail: string,
+        name: string,
+        message: string,
+        isSent: React.Dispatch<React.SetStateAction<boolean>>,
+        setMail: React.Dispatch<React.SetStateAction<string>>,
+        setName: React.Dispatch<React.SetStateAction<string>>,
+        setMessage: React.Dispatch<React.SetStateAction<string>>
+    ) => void;
+}
+
+const ContactForm: React.FC<Props> = ({ onSubmitMail }) => {
 
     const [mail, setMail] = useState<string>('');
     const [name, setName] = useState<string>('');
     const [message, setMessage] = useState<string>('');
 
+    const [isMailSent, setIsMailSent] = useState(true);
 
     const handleSubmit = (e: React.FormEvent): void => {
-        e.preventDefault();
-        if ( (mail !== '' && emailValidator(mail)) && name !== '' && message !== '' ) {
-            console.log(mail);
-            console.log(name);
-            console.log(message);
-        }
+        onSubmitMail(e, mail, name, message, setIsMailSent, setMail, setName, setMessage);
     }
 
     return(
@@ -28,6 +39,7 @@ const ContactForm: React.FC = () => {
                         setValue={setMessage}
                         labelText="Your message"
                         placeholder="Tell us about your project or ask us anything..."
+                        value={message}
                         isRequired={true} />
                     <div className="contact-form__form__inputs">
                         <InputField
@@ -37,6 +49,7 @@ const ContactForm: React.FC = () => {
                             isRequired={true}
                             type="email"
                             name="email"
+                            value={mail}
                             isValid={emailValidator} />
                         <InputField
                             setValue={setName}
@@ -44,9 +57,17 @@ const ContactForm: React.FC = () => {
                             placeholder="John Doe"
                             isRequired={true}
                             type="text"
-                            name="text" />
+                            name="text"
+                            value={name} />
                     </div>
-                    <button type="submit" className="contact-form__form__inputs__btn">Submit</button>
+                    <div className="contact-form__form__button">
+                        { isMailSent ? 
+                            <button
+                                type="submit"
+                                className="contact-form__form__button__btn"
+                                >Submit</button>
+                            : <Spinner /> }
+                    </div>
                 </form>
             </div>
         </>
