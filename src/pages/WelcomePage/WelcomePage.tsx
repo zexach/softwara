@@ -9,7 +9,7 @@ const WelcomePage: React.FC = () => {
 
     return(
         <>
-        <div className="welcome-page">
+        <div id="home" className="welcome-page">
             <motion.div
                 initial={{ opacity: 0 }}
                 whileInView={{ opacity: 1, transition:{ duration: 0.5 } }}
