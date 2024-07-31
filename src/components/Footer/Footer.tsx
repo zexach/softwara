@@ -14,12 +14,12 @@ const Footer: React.FC = () => {
 
     const emir: ILink[] = [
         { title: 'Linkedin', link: 'https://linkedin.com/in/emir-zambakovic/' },
-        { title: 'About', link: 'https://github.com/zexach' },
+        { title: 'Github', link: 'https://github.com/zexach' },
     ]
 
     const muamer: ILink[] = [
         { title: 'Linkedin', link: 'https://www.linkedin.com/in/muamer-alickovic/' },
-        { title: 'About', link: 'https://github.com/mr-am2k' },
+        { title: 'Github', link: 'https://github.com/mr-am2k' },
     ]
 
     return(
