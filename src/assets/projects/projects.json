@@ -3,24 +3,26 @@
         "id": 1,
         "image": "https://i.imgur.com/GgBmrZl.png",
         "name": "Star Tunes",
-        "description": "A music streaming application allows users to access a vast library of music content and favorite songs online, without the need to download or own music files."
+        "description": "A music streaming application allows users to access a vast library of music content and favorite songs online, without the need to download or own music files.",
+        "video": true
     },
     {
-        "id": 2,
+        "id": 1,
         "image": "https://i.imgur.com/GgBmrZl.png",
         "name": "Star Tunes",
-        "description": "A music streaming application allows users to access a vast library of music content and favorite songs online, without the need to download or own music files."
-    },
-    {
-        "id": 3,
+        "description": "A music streaming application allows users to access a vast library of music content and favorite songs online, without the need to download or own music files.",
+        "video": true
+    },{
+        "id": 1,
         "image": "https://i.imgur.com/GgBmrZl.png",
         "name": "Star Tunes",
-        "description": "A music streaming application allows users to access a vast library of music content and favorite songs online, without the need to download or own music files."
-    },
-    {
-        "id": 4,
+        "description": "A music streaming application allows users to access a vast library of music content and favorite songs online, without the need to download or own music files.",
+        "video": true
+    },{
+        "id": 1,
         "image": "https://i.imgur.com/GgBmrZl.png",
         "name": "Star Tunes",
-        "description": "A music streaming application allows users to access a vast library of music content and favorite songs online, without the need to download or own music files."
+        "description": "A music streaming application allows users to access a vast library of music content and favorite songs online, without the need to download or own music files.",
+        "video": true
     }
 ]
