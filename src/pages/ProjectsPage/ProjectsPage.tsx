@@ -26,7 +26,7 @@ const ProjectsPage: React.FC = () => {
                         <ProjectCard
                             key={project.id}
                             id={project.id}
-                            image={project.image}
+                            image={project.backgroundImage}
                             name={project.name}
                             description={project.description} /> ) }
                 </motion.div>

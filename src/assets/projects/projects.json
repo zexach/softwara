@@ -1,26 +1,48 @@
 [
     {
         "id": 1,
-        "image": "https://i.imgur.com/GgBmrZl.png",
+        "backgroundImage": "https://i.imgur.com/GgBmrZl.png",
+        "images": [
+            "https://i.imgur.com/GgBmrZl.png",
+            "https://i.imgur.com/rx7VVyU.png",
+            "https://i.imgur.com/6zk5OdA.png"
+        ],
         "name": "Star Tunes",
         "description": "A music streaming application allows users to access a vast library of music content and favorite songs online, without the need to download or own music files.",
         "video": true
     },
     {
         "id": 2,
-        "image": "https://i.imgur.com/GgBmrZl.png",
+        "backgroundImage": "https://i.imgur.com/GgBmrZl.png",
+        "images": [
+            "https://i.imgur.com/GgBmrZl.png",
+            "https://i.imgur.com/rx7VVyU.png",
+            "https://i.imgur.com/6zk5OdA.png"
+        ],
         "name": "Star Tunes",
         "description": "A music streaming application allows users to access a vast library of music content and favorite songs online, without the need to download or own music files.",
         "video": true
-    },{
+    },
+    {
         "id": 3,
-        "image": "https://i.imgur.com/GgBmrZl.png",
+        "backgroundImage": "https://i.imgur.com/GgBmrZl.png",
+        "images": [
+            "https://i.imgur.com/GgBmrZl.png",
+            "https://i.imgur.com/rx7VVyU.png",
+            "https://i.imgur.com/6zk5OdA.png"
+        ],
         "name": "Star Tunes",
         "description": "A music streaming application allows users to access a vast library of music content and favorite songs online, without the need to download or own music files.",
         "video": true
-    },{
+    },
+    {
         "id": 4,
-        "image": "https://i.imgur.com/GgBmrZl.png",
+        "backgroundImage": "https://i.imgur.com/GgBmrZl.png",
+        "images": [
+            "https://i.imgur.com/GgBmrZl.png",
+            "https://i.imgur.com/rx7VVyU.png",
+            "https://i.imgur.com/6zk5OdA.png"
+        ],
         "name": "Star Tunes",
         "description": "A music streaming application allows users to access a vast library of music content and favorite songs online, without the need to download or own music files.",
         "video": true

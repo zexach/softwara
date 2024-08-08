@@ -1,6 +1,7 @@
 export interface IProject {
     id: number,
-    image: string,
+    backgroundImage: string,
+    images: string[],
     name: string,
     description: string,
     video: boolean
