@@ -4,5 +4,6 @@ export interface IProject {
     images: string[],
     name: string,
     description: string,
-    video: boolean
+    video: boolean,
+    videoUrl: string | null
 }

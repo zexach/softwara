@@ -6,12 +6,14 @@ import ProjectImage from "../../components/ProjectImage/ProjectImage";
 import { useParams } from "react-router-dom";
 import { IProject } from "../../models/project";
 import useProjects from "../../assets/projects/projects.json"
+import ProjectVideo from "../../components/ProjectVideo/ProjectVideo";
+import BackButton from "../../components/BackButton/BackButton";
 
 
 const ProjectPage: React.FC = () => {
 
     const { id } = useParams();
-    const projectId: number = Number(id);
+    const projectId: number = Number(id) - 1;
     const projects: IProject[] = useProjects;
 
     const responsive = {
@@ -42,6 +44,7 @@ const ProjectPage: React.FC = () => {
                     }
                     className="project-page__images-section">
                     <div className="project-page__images-section__images">
+                        <BackButton />
                         <Carousel
                             responsive={responsive}
                             additionalTransfrom={0}
@@ -51,7 +54,6 @@ const ProjectPage: React.FC = () => {
                             className=""
                             containerClass="project-page__images-section__images__carousel"
                             dotListClass=""
-                            draggable
                             focusOnSelect={false}
                             infinite
                             itemClass="project-page__images-section__images__carousel__items"
@@ -67,13 +69,12 @@ const ProjectPage: React.FC = () => {
                             shouldResetAutoplay
                             showDots={false}
                             sliderClass=""
-                            slidesToSlide={1}
-                            swipeable>
+                            slidesToSlide={1}>
+                                { projects[projectId].video ? <ProjectVideo url={projects[projectId].videoUrl} /> : null }
                                 { projects[projectId].images.map((image) => <ProjectImage key={image} image={image} />) }
                         </Carousel>
                     </div>
                 </div>
-
             </div>
         </>
     );
