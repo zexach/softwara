@@ -36,7 +36,11 @@ const ProjectPage: React.FC = () => {
     return(
         <>
             <div className="project-page">
-                <div style={{backgroundImage: `url(${projects[projectId].backgroundImage})`}} className="project-page__images-section">
+                <div 
+                    style={
+                        {backgroundImage: `linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url(${projects[projectId].backgroundImage})`}
+                    }
+                    className="project-page__images-section">
                     <div className="project-page__images-section__images">
                         <Carousel
                             responsive={responsive}
