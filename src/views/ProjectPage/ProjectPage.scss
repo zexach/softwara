@@ -1,6 +1,9 @@
+@import '../../style/_variables.scss';
+
 .project-page{
     max-width: 100%;
     min-height: 100vh;
+    background-color: $background;
     &__images-section{
         width: 100%;
         height: 580px;
