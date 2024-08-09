@@ -10,7 +10,10 @@ import ProjectVideo from "../../components/ProjectVideo/ProjectVideo";
 import BackButton from "../../components/BackButton/BackButton";
 import PageHeader from "../../components/PageHeader/PageHeader";
 import Description from "../../components/Description/Description";
-
+import industryIcon from '../../assets/icons/industry.svg';
+import scopeIcon from '../../assets/icons/scope.svg';
+import technologyIcon from '../../assets/icons/technology.svg';
+import ProjectDetails from "../../components/ProjectDetails/ProjectDetails";
 
 const ProjectPage: React.FC = () => {
 
@@ -88,6 +91,12 @@ const ProjectPage: React.FC = () => {
                             <p className="project-page__info-section__title-section__wip">Work in progress</p> : null }
                     </div>
                     <Description text={projects[projectId].longDescription} />
+                    <div className="project-page__info-section__details">
+                        <ProjectDetails title="Industry" icon={industryIcon} details={projects[projectId].industry} />
+                        <ProjectDetails title="Technologies" icon={technologyIcon} details={projects[projectId].technologies} />
+                        <ProjectDetails title="Scope of Work" icon={scopeIcon} details={projects[projectId].scopeOfWork} />
+
+                    </div>
                 </div>
             </div>
         </>

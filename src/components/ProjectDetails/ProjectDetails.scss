@@ -1,0 +1,21 @@
+@import '../../style/_variables.scss';
+
+.project-details {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 1rem;
+    &__icon{
+        padding: 1rem;
+        border-radius: 5px;
+        background-color: $purple;
+    }
+    &__content{
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        &__item{
+            font-weight: 300;
+        }
+    }
+}

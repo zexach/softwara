@@ -9,4 +9,6 @@ export interface IProject {
     videoUrl: string | null,
     workInProgress: boolean,
     technologies: string[],
+    scopeOfWork: string[],
+    industry: string[],
 }

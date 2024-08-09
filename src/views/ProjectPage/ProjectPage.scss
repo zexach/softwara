@@ -21,7 +21,7 @@
         padding: 3rem;
         display: flex;
         flex-direction: column;
-        gap: 1rem;
+        gap: 3rem;
         &__title-section{
             display: flex;
             flex-direction: row;
@@ -36,6 +36,12 @@
                 font-weight: 400;
                 color: $background;
             }
+        }
+        &__details{
+            display: flex;
+            flex-direction: row;
+            justify-content: space-around;
+            flex-wrap: wrap;
         }
     }
 }
