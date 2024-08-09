@@ -12,7 +12,7 @@
             display: grid;
             &__carousel{
                 &__items{
-                    width: 700px;
+                    width: 100%;
                 }
             }
         }
@@ -41,7 +41,28 @@
             display: flex;
             flex-direction: row;
             justify-content: space-around;
+            align-items: center;
             flex-wrap: wrap;
+            gap: 1.5rem;
+        }
+    }
+}
+
+@media screen and (max-width: 1140px) {
+    .project-page {
+        &__images-section {
+            height: 400px;
+        }
+    }
+}
+
+@media screen and (max-width: 585px) {
+    .project-page {
+        &__info-section {
+            &__title-section {
+                flex-direction: column;
+                gap: 0.5rem;
+            }
         }
     }
 }

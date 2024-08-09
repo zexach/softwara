@@ -13,8 +13,6 @@ const ProjectVideo: React.FC<Props> = ({ url }) => {
             <iframe 
                 className="project-video"
                 title="Trailer"
-                width="700"
-                height="400"
                 src={`https://www.youtube.com/embed/${url}`} />
         </>
     );

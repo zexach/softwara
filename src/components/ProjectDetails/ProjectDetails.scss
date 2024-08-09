@@ -1,6 +1,8 @@
 @import '../../style/_variables.scss';
 
 .project-details {
+    //flex: 0 0 30%;
+    width: 320px;
     display: flex;
     flex-direction: row;
     align-items: center;
