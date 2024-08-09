@@ -17,4 +17,25 @@
             }
         }
     }
+    &__info-section{
+        padding: 3rem;
+        display: flex;
+        flex-direction: column;
+        gap: 1rem;
+        &__title-section{
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+            gap: 2rem;
+            &__wip {
+                padding: 0.5rem;
+                border-radius: 2px;
+                box-shadow: 2px 10px 29px -13px rgba(0,0,0,0.15);
+                background-color: $purple;
+                font-size: 14px;
+                font-weight: 400;
+                color: $background;
+            }
+        }
+    }
 }

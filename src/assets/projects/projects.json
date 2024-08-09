@@ -2,53 +2,13 @@
     {
         "id": 1,
         "backgroundImage": "https://i.imgur.com/GgBmrZl.png",
-        "images": [
-            "https://i.imgur.com/GgBmrZl.png",
-            "https://i.imgur.com/rx7VVyU.png",
-            "https://i.imgur.com/6zk5OdA.png"
-        ],
+        "images": [ "https://i.imgur.com/GgBmrZl.png", "https://i.imgur.com/rx7VVyU.png", "https://i.imgur.com/6zk5OdA.png"],
         "name": "Star Tunes",
         "description": "A music streaming application allows users to access a vast library of music content and favorite songs online, without the need to download or own music files.",
+        "longDescription": "Star Tunes streaming application, built using React with SCSS, utilizes the Spotify API to fetch music data. The application incorporates Spotify authorization, allowing users to securely authenticate and access their Spotify accounts. Users can explore music, play songs, discover new albums, and create their own playlists, leveraging the features provided by the Spotify platform. A Spotify Premium account is required to access certain features, such as playing songs.",
         "video": true,
-        "videoUrl": "90RLzVUuXe4?si=ETHghueg_Ad1vyNZ"
-    },
-    {
-        "id": 2,
-        "backgroundImage": "https://i.imgur.com/GgBmrZl.png",
-        "images": [
-            "https://i.imgur.com/GgBmrZl.png",
-            "https://i.imgur.com/rx7VVyU.png",
-            "https://i.imgur.com/6zk5OdA.png"
-        ],
-        "name": "Star Tunes",
-        "description": "A music streaming application allows users to access a vast library of music content and favorite songs online, without the need to download or own music files.",
-        "video": false,
-        "videoUrl": null
-    },
-    {
-        "id": 3,
-        "backgroundImage": "https://i.imgur.com/GgBmrZl.png",
-        "images": [
-            "https://i.imgur.com/GgBmrZl.png",
-            "https://i.imgur.com/rx7VVyU.png",
-            "https://i.imgur.com/6zk5OdA.png"
-        ],
-        "name": "Star Tunes",
-        "description": "A music streaming application allows users to access a vast library of music content and favorite songs online, without the need to download or own music files.",
-        "video": false,
-        "videoUrl": null
-    },
-    {
-        "id": 4,
-        "backgroundImage": "https://i.imgur.com/GgBmrZl.png",
-        "images": [
-            "https://i.imgur.com/GgBmrZl.png",
-            "https://i.imgur.com/rx7VVyU.png",
-            "https://i.imgur.com/6zk5OdA.png"
-        ],
-        "name": "Star Tunes",
-        "description": "A music streaming application allows users to access a vast library of music content and favorite songs online, without the need to download or own music files.",
-        "video": false,
-        "videoUrl": null
+        "videoUrl": "90RLzVUuXe4?si=ETHghueg_Ad1vyNZ",
+        "workInProgress": true,
+        "technologies": ["React.js", "SCSS"]
     }
 ]

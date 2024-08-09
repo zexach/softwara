@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useEffect } from "react";
 import './ProjectPage.scss';
 import 'react-multi-carousel/lib/styles.css';
 import Carousel from "react-multi-carousel";
@@ -8,6 +8,8 @@ import { IProject } from "../../models/project";
 import useProjects from "../../assets/projects/projects.json"
 import ProjectVideo from "../../components/ProjectVideo/ProjectVideo";
 import BackButton from "../../components/BackButton/BackButton";
+import PageHeader from "../../components/PageHeader/PageHeader";
+import Description from "../../components/Description/Description";
 
 
 const ProjectPage: React.FC = () => {
@@ -34,6 +36,10 @@ const ProjectPage: React.FC = () => {
             items: 1,
         },
     };
+
+    useEffect(() => {
+        window.scrollTo(0, 0);
+    }, [])
 
     return(
         <>
@@ -74,6 +80,14 @@ const ProjectPage: React.FC = () => {
                                 { projects[projectId].images.map((image) => <ProjectImage key={image} image={image} />) }
                         </Carousel>
                     </div>
+                </div>
+                <div className="project-page__info-section">
+                    <div className="project-page__info-section__title-section">
+                        <PageHeader title={projects[projectId].name} />
+                        { projects[projectId].workInProgress ? 
+                            <p className="project-page__info-section__title-section__wip">Work in progress</p> : null }
+                    </div>
+                    <Description text={projects[projectId].longDescription} />
                 </div>
             </div>
         </>
