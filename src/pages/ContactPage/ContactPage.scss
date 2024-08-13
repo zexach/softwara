@@ -29,3 +29,16 @@
         }
     }
 }
+
+@media screen and (max-width: 700px) {
+    .contact-page {
+        &__content{
+            &__info {
+                &__desc {
+                    font-size: 18px;
+                    text-align: center;
+                }
+            }
+        }
+    }
+}

@@ -18,3 +18,13 @@
         gap: 10rem;
     }
 }
+
+@media screen and (max-width: 900px) {
+    .footer {
+        gap: 2rem;
+        &__links {
+            gap: 5rem;
+            justify-content: flex-start;
+        }
+    }
+}
