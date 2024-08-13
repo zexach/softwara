@@ -8,7 +8,7 @@ import LinkButton from "../../components/LinkButton/LinkButton";
 const WelcomePage: React.FC = () => {
 
     const screenWidth = window.innerWidth;
-
+    
     return(
         <>
         <div id="home" className="welcome-page">
