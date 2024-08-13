@@ -51,3 +51,18 @@
         opacity: 1;
     }
 }
+
+@media screen and (max-width: 720px) {
+    .project-card {
+        width: 350px;
+        height: 300px;
+        &__background {
+            width: 350px;
+            height: 300px;
+        }
+        &__info{
+            width: 350px;
+            height: 300px;
+        }
+    }
+}

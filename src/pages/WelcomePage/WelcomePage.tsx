@@ -2,10 +2,16 @@ import React from "react";
 import './WelcomePage.scss'
 import Waves from "../../components/Waves/Waves";
 import { TypeAnimation } from "react-type-animation";
-import LinkButton from "../../components/LinkButton/LinkButton";
 import { motion } from "framer-motion";
+import LinkButton from "../../components/LinkButton/LinkButton";
 
 const WelcomePage: React.FC = () => {
+
+    const screenWidth = window.innerWidth;
+
+    const responsiveStyle = {
+        fontSize: screenWidth < 760 ? '40px' : '70px'
+    }
 
     return(
         <>
@@ -21,8 +27,7 @@ const WelcomePage: React.FC = () => {
                             'We Are', 1000
                         ]}
                         speed={50}
-                        
-                        style={{ fontSize: '70px', fontWeight: '600', color: '#000' }}
+                        style={{ fontSize: screenWidth < 760 ? '30px' : '70px', fontWeight: '600', color: '#000' }}
                         repeat={1}
                         cursor={false}
                         />
@@ -32,7 +37,7 @@ const WelcomePage: React.FC = () => {
                             'Creative Spirits.', 1500,
                             'Developers.', 1500]}
                         speed={50}
-                        style={{ fontSize: '100px', fontWeight: '700', color: '#801270' }}
+                        style={{ fontSize: screenWidth < 760 ? '50px' : '100px', fontWeight: '700', color: '#801270' }}
                         repeat={Infinity}
                         />
                 </div>
