@@ -8,6 +8,8 @@
         font-size: 20px;
     }
     &__input{
+        width: clamp(50px, 80vw, 1000px);
+        height: 300px;
         padding: 1rem;
         border: 1px solid $background;
         background-color: transparent;
@@ -25,3 +27,4 @@
     }
     
 }
+

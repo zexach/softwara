@@ -35,3 +35,15 @@
         }
     }
 }
+
+@media screen and (max-width: 600px) {
+    .contact-form {
+        &__form {
+            &__inputs {
+                display: flex;
+                flex-direction: column;
+                
+            }
+        }
+    }
+}

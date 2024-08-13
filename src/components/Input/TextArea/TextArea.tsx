@@ -26,8 +26,6 @@ const TextArea: React.FC<Props> = ({ setValue, labelText, placeholder, value, is
             <label className="text-area__label">{ labelText }</label>
             <textarea
                 onChange={handleChangeEvent}
-                rows={10}
-                cols={100}
                 name="message"
                 placeholder={placeholder}
                 value={value}
