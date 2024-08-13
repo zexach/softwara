@@ -9,10 +9,6 @@ const WelcomePage: React.FC = () => {
 
     const screenWidth = window.innerWidth;
 
-    const responsiveStyle = {
-        fontSize: screenWidth < 760 ? '40px' : '70px'
-    }
-
     return(
         <>
         <div id="home" className="welcome-page">
