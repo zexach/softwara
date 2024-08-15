@@ -23,8 +23,18 @@
     .footer {
         gap: 2rem;
         &__links {
-            gap: 5rem;
-            justify-content: flex-start;
+            gap: 3rem;
+            justify-content: flex-start ;
+        }
+    }
+}
+
+@media screen and (max-width: 480px) {
+    .footer {
+        align-items: flex-start;
+        flex-direction: column;
+        &__title {
+            font-size: 30px;
         }
     }
 }

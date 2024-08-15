@@ -30,7 +30,6 @@ const Footer: React.FC = () => {
                     <FooterLinks sectionTitle="Muamer's Socials" links={muamer} />
                     <FooterLinks sectionTitle="Emir's Socials" links={emir} />
                 </div>
-                
                 <h1 className="footer__title">softwara</h1>
             </div>
         </>
