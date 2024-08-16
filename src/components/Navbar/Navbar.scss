@@ -26,3 +26,10 @@
         }
     }
 }
+
+@media screen and (max-width: 630px) {
+    .navbar {
+        padding: 1rem;
+        gap: 1rem;
+    }
+}
