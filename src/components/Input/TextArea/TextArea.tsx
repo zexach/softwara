@@ -8,9 +8,10 @@ type Props = {
     placeholder: string;
     value: string;
     isRequired: boolean;
+    name: string;
 }
 
-const TextArea: React.FC<Props> = ({ setValue, labelText, placeholder, value, isRequired }) => {
+const TextArea: React.FC<Props> = ({ setValue, labelText, placeholder, value, isRequired, name }) => {
 
     const [isEmpty, setIsEmpty] = useState<boolean>(false);
 
@@ -23,13 +24,13 @@ const TextArea: React.FC<Props> = ({ setValue, labelText, placeholder, value, is
     return(
         <>
         <div className="text-area">
-            <label className="text-area__label">{ labelText }</label>
+            <label htmlFor={name} className="text-area__label">{ labelText }</label>
             <textarea
                 onChange={handleChangeEvent}
                 name="message"
                 placeholder={placeholder}
                 value={value}
-                id="message"
+                id={name}
                 className="text-area__input"></textarea>
             { (isRequired && isEmpty) ? <p className="text-area__warning">This field is required</p> : '' }
         </div>

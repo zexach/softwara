@@ -2,7 +2,7 @@
     {
         "id": 1,
         "name": "Muamer Alickovic",
-        "image": "https://i.imgur.com/eZGSdsY.jpg",
+        "image": "/team/muamer.webp",
         "linkedin": "https://www.linkedin.com/in/muamer-alickovic/",
         "github": "https://github.com/mr-am2k",
         "facebook": "https://www.facebook.com/muamer.alickovic.16",
@@ -11,7 +11,7 @@
     {
         "id": 2,
         "name": "Emir Zambakovic",
-        "image": "https://i.imgur.com/vj1wkXr.jpg",
+        "image": "/team/emir.webp",
         "linkedin": "https://linkedin.com/in/emir-zambakovic/",
         "github": "https://github.com/zexach",
         "facebook": "https://www.facebook.com/emir.zambakovic/",

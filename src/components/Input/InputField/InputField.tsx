@@ -9,7 +9,7 @@ type Props = {
     isRequired: boolean;
     type: string;
     isValid?: (mail: string) => boolean;
-    name?: string;
+    name: string;
     value?: string;
 
 }
@@ -40,7 +40,8 @@ const InputField: React.FC<Props> = ({ setValue, labelText, placeholder, isRequi
                 name={name}
                 value={value}
                 autoComplete="off"
-                className="input-field__input" />
+                className="input-field__input"
+                id={name} />
             { (isRequired && isEmpty) ? <p className="input-field__warning">This field is required</p> : 
                 !isValidInput ? <p className="input-field__warning">Email is not valid</p> : null }
         </div>

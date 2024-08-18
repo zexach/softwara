@@ -40,6 +40,7 @@ const ContactForm: React.FC<Props> = ({ onSubmitMail }) => {
                         labelText="Your message"
                         placeholder="Tell us about your project or ask us anything..."
                         value={message}
+                        name="mailText"
                         isRequired={true} />
                     <div className="contact-form__form__inputs">
                         <InputField
@@ -57,7 +58,7 @@ const ContactForm: React.FC<Props> = ({ onSubmitMail }) => {
                             placeholder="John Doe"
                             isRequired={true}
                             type="text"
-                            name="text"
+                            name="name"
                             value={name} />
                     </div>
                     <div className="contact-form__form__button">
